@@ -29,13 +29,6 @@ pipeline {
                 build 'ansible_playbook'
             }
         }
-        
-        stage('Monitoring') {
-            steps {
-                echo 'Hello Deploy Phase'
-                build 'URL Status Check'
-            }
-        }
     }
     post { 
         always { 
